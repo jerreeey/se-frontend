@@ -1,0 +1,13 @@
+.navigation{
+  background-color: var(--color-contrast);
+  padding: var(--em-3);
+}
+.navigation a{
+  text-decoration: none;
+  font-size: var(--rem0);
+}
+
+.navigation a:not(.button){
+  color: var(--color-navigation);
+  font-weight: 500;
+}

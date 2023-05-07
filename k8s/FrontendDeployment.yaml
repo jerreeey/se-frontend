@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: se-frontend
+spec:
+  selector:
+    matchLabels:
+      app: se-frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: se-frontend
+    spec:
+      containers:
+        - name: se-frontend
+          image: jerreeey/se-frontend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
