@@ -3,8 +3,8 @@ import store from '../store'
 import router from '../router/router.js'
 import authHeader from './auth-header';
 
-const API_URL = 'http://20.242.164.221/users';
-const API_URL2 = 'http://20.242.164.221/authentications';
+const API_URL = 'https://se-api-management-service-resource-name.azure-api.net/users';
+const API_URL2 = 'https://se-api-management-service-resource-name.azure-api.net/authentications';
 
 class UserService {
   login(user) {

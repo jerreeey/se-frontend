@@ -1,7 +1,7 @@
 import axios from 'axios'; 
 import authHeader from './auth-header';
 
-const API_URL = 'http://20.103.105.116/bookings';
+const API_URL = 'https://se-api-management-service-resource-name.azure-api.net/bookings';
 class BookingService {
   async getBookings(userid) {
     return await axios.get(API_URL + '/users/' + userid,{
